@@ -8,7 +8,10 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  font-size: 1.5em;
+  font-family: "Times New Roman", Times, serif;
 }
 .active {
-  background-color: #b22cff;
+  color: blue;
+  font-weight: bold;
 }
