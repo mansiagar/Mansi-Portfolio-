@@ -1,0 +1,16 @@
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.left_container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.right_container {
+  margin-right: 30px;
+  padding: 2px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+}
