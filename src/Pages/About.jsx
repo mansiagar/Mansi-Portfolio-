@@ -18,6 +18,7 @@ const About = () => {
       <div className="about_container">
         <div className="left_container">
           <Image
+            className="scale-in-hor-left"
             src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/673c4fdcd211b66950d6653962981ca0c0c93721/src/assets/profile.jpg"
             alt="Profile Picture"
             boxSize="300px"
@@ -25,8 +26,8 @@ const About = () => {
           />
         </div>
         <div className="right_container">
-          <Box>
-            <Text>
+          <Box className="scale-in-hor-right ">
+            <Text lineHeight={2}>
               A passionate Front-End Developer with expertise in React.js,
               JavaScript, and modern UI libraries like Chakra UI and Material
               UI, dedicated to creating responsive, interactive, and visually
