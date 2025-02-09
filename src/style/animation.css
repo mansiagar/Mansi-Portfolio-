@@ -1,0 +1,34 @@
+.focus-in {
+  animation: focus-in 0.8s ease-in-out both;
+}
+@keyframes focus-in {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.color-change-2x {
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
