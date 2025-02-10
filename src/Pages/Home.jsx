@@ -1,8 +1,8 @@
 import "../style/animation.css";
 import { Box, Text } from "@chakra-ui/react";
 
-import Navbar from "../Component/Navbar";
-import About from "./About";
+//import Navbar from "../Component/Navbar";
+//import About from "./About";
 
 const Home = () => {
   return (
@@ -16,7 +16,6 @@ const Home = () => {
         borderRadius="lg" // Rounded corners
         bg="gray.100" // Light background
       >
-        <Navbar />
         <Box
           display="flex" // Use flexbox for alignment
           flexDirection="column" // Stack items vertically
@@ -38,7 +37,6 @@ const Home = () => {
           </Text>
         </Box>
       </Box>
-      <About />
     </div>
   );
 };
