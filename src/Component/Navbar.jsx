@@ -4,6 +4,7 @@ import { Box, Flex, Link } from "@chakra-ui/react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import About from "@/Pages/About";
 import Logo from "./Logo";
+import Skills from "@/Pages/Skills";
 
 const Navbar = () => {
   return (
@@ -34,9 +35,19 @@ const Navbar = () => {
               </Link>
             </ScrollLink>
             {/* Due state */}
-            <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
+            <ScrollLink to="skill" smooth={true} duration={500} offset={-70}>
               <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Skills
+              </Link>
+            </ScrollLink>
+            <ScrollLink
+              to="Exprience"
+              smooth={true}
+              duration={500}
+              offset={-70}
+            >
+              <Link p={3} color="white" fontFamily="bold" cursor="pointer">
+                Experience
               </Link>
             </ScrollLink>
             <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
@@ -62,6 +73,12 @@ const Navbar = () => {
         <Element name="about">
           <Box>
             <About />
+          </Box>
+        </Element>
+        {/* skills Section */}
+        <Element name="skill">
+          <Box>
+            <Skills />
           </Box>
         </Element>
       </Box>
