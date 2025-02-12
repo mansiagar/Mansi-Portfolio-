@@ -1,0 +1,17 @@
+.Contact_container {
+  width: 30%;
+}
+.focus-in {
+  animation: focus-in 0.8s ease-in-out both;
+}
+@keyframes focus-in {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

@@ -9,6 +9,11 @@
   text-align: center;
   justify-content: center;
 }
+Button {
+  background-color: #19dcea;
+  color: white;
+  font-size: 1.1em;
+}
 .right_container {
   margin-right: 30px;
   padding: 2px;
