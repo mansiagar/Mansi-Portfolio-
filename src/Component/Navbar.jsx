@@ -7,6 +7,9 @@ import About from "@/Pages/About";
 
 import Skills from "@/Pages/Skills";
 import { useState } from "react";
+import Exprience from "@/Pages/Exprience";
+import Project from "@/Pages/Project";
+import Contacts from "@/Pages/Contacts";
 
 const Navbar = () => {
   const [aboutVisible, setaboutVisible] = useState(false);
@@ -63,12 +66,12 @@ const Navbar = () => {
                 Experience
               </Link>
             </ScrollLink>
-            <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
+            <ScrollLink to="projects" smooth={true} duration={500} offset={-70}>
               <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Projects
               </Link>
             </ScrollLink>
-            <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
+            <ScrollLink to="contacts" smooth={true} duration={500} offset={-70}>
               <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Contact
               </Link>
@@ -92,6 +95,24 @@ const Navbar = () => {
         <Element name="skill">
           <Box>
             <Skills isVisible={skillVisible} />
+          </Box>
+        </Element>
+        {/* Exprience Section */}
+        <Element name="Exprience">
+          <Box>
+            <Exprience />
+          </Box>
+        </Element>
+        {/* Projects Section */}
+        <Element name="projects">
+          <Box>
+            <Project />
+          </Box>
+        </Element>
+        {/* Contacts Section */}
+        <Element name="contacts">
+          <Box>
+            <Contacts />
           </Box>
         </Element>
       </Box>

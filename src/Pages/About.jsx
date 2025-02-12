@@ -20,7 +20,7 @@ const About = ({ isVisible }) => {
         alignItems="center"
       >
         <Text fontSize="3xl" fontWeight="bold" p={5}>
-          About
+          ABOUT ME
         </Text>
       </Box>
 

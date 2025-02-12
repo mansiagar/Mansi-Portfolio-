@@ -1,16 +1,13 @@
 import "../style/animation.css";
 import { Box, Text } from "@chakra-ui/react";
 
-//import Navbar from "../Component/Navbar";
-//import About from "./About";
-
 const Home = () => {
   return (
     <div>
       <Box
         className="color-change-2x" // Animista animation
         maxW="100%" // Set max width
-        h="600px"
+        h="700px"
         p={8} // Add padding inside the container
         boxShadow="lg" // Add shadow for depth
         borderRadius="lg" // Rounded corners

@@ -28,7 +28,7 @@ const Skills = ({ isVisible }) => {
         alignItems="center"
       >
         <Text fontSize="3xl" fontWeight="bold" p={5}>
-          Technical Skills
+          TECHNICAL SKILLS{" "}
         </Text>
       </Box>
 
@@ -51,7 +51,7 @@ const Skills = ({ isVisible }) => {
           alignItems="center"
         >
           <Text fontSize="3xl" fontWeight="bold" p={5}>
-            Git Statistics
+            GIT STATISTICS
           </Text>
         </Box>
         <div className="git_container">
