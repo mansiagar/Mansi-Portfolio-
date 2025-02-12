@@ -1,7 +1,16 @@
 import { Box, Button, Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import "../style/about.css";
-const About = () => {
+import { useState, useEffect } from "react";
+// eslint-disable-next-line react/prop-types
+const About = ({ isVisible }) => {
+  const [animate, setanimate] = useState(false);
+
+  useEffect(() => {
+    if (isVisible) {
+      setanimate(true);
+    }
+  }, [isVisible]);
   return (
     <div>
       <Box
@@ -18,7 +27,7 @@ const About = () => {
       <div className="about_container">
         <div className="left_container">
           <Image
-            className="scale-in-hor-left"
+            className={animate ? "scale-in-hor-left" : ""}
             src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/673c4fdcd211b66950d6653962981ca0c0c93721/src/assets/profile.jpg"
             alt="Profile Picture"
             boxSize="300px"
@@ -26,7 +35,7 @@ const About = () => {
           />
         </div>
         <div className="right_container">
-          <Box className="scale-in-hor-right ">
+          <Box className={animate ? "scale-in-hor-right" : ""}>
             <Text lineHeight={2}>
               A passionate Front-End Developer with expertise in React.js,
               JavaScript, and modern UI libraries like Chakra UI and Material

@@ -15,9 +15,9 @@
   font-size: 1.1em;
 }
 .scale-in-hor-left {
-  -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+  -webkit-animation: scale-in-hor-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
-  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes scale-in-hor-left {
   0% {
@@ -52,9 +52,9 @@
   }
 }
 .scale-in-hor-right {
-  -webkit-animation: scale-in-hor-right 0.5s
+  -webkit-animation: scale-in-hor-right 0.9s
     cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-right 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes scale-in-hor-right {

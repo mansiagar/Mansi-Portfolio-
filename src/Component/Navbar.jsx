@@ -3,10 +3,12 @@ import "../style/navbar.css";
 import { Box, Flex, Link } from "@chakra-ui/react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import About from "@/Pages/About";
-import Logo from "./Logo";
+
 import Skills from "@/Pages/Skills";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [aboutVisible, setaboutVisible] = useState(false);
   return (
     <div>
       <Box>
@@ -21,16 +23,19 @@ const Navbar = () => {
           className="navbar"
         >
           <div className="right_side">
-            <Logo />
-          </div>
-          <div className="left_side">
             <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
               <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Home
               </Link>
             </ScrollLink>
             <ScrollLink to="about" smooth={true} duration={500} offset={-70}>
-              <Link p={3} color="white" fontWeight="bold" cursor="pointer">
+              <Link
+                p={3}
+                color="white"
+                fontWeight="bold"
+                cursor="pointer"
+                onClick={() => setaboutVisible(true)}
+              >
                 About
               </Link>
             </ScrollLink>
@@ -72,7 +77,7 @@ const Navbar = () => {
         {/* about Section */}
         <Element name="about">
           <Box>
-            <About />
+            <About isVisible={aboutVisible} />
           </Box>
         </Element>
         {/* skills Section */}
