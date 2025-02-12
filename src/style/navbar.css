@@ -8,6 +8,19 @@
   gap: 20px;
   font-size: 1.4em;
   font-family: "Times New Roman", Times, serif;
+  width: 100vw;
+}
+.right_side {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.4em;
+  font-family: "Times New Roman", Times, serif;
+  width: 100vw;
 }
 
 .active {

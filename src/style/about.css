@@ -1,6 +1,7 @@
 .about_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding: 100px;
 }
 .left_container {
   display: flex;
