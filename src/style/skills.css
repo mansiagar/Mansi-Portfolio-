@@ -122,16 +122,21 @@
 /* git styles */
 .git_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
-.git_left_container,
 .git_right_container {
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: center;
-  margin-right: 30px;
-  padding: 2px;
+  justify-content: flex-end;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+}
+.git_left_container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1em;
 }

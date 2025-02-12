@@ -57,12 +57,37 @@ const Skills = ({ isVisible }) => {
         <div className="git_container">
           <div className="git_left_container">
             <Box className={animate ? "scale-in-hor-left" : ""}>
-              <Image />
+              <Image
+                src="https://github-readme-stats.vercel.app/api?username=mansiagar&show_icons=true&theme=default"
+                alt="Profile Picture"
+                height="200px"
+                width="100%"
+                objectFit="cover"
+              />
+            </Box>
+          </div>
+
+          <div className="">
+            <Box className={animate ? "" : ""}>
+              <Image
+                src="https://github-readme-streak-stats.herokuapp.com/?user=mansiagar&theme=default"
+                alt="Profile Picture"
+                height="200px"
+                width="100%"
+                objectFit="cover"
+              />
             </Box>
           </div>
           <div className="git_right_container">
             <Box className={animate ? "scale-in-hor-right" : ""}>
-              <Image />
+              <Image
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=mansiagar&layout=compact&theme=default"
+                alt="Profile Picture"
+                height="200px"
+                width="100%"
+                objectFit="cover"
+                marginRight={10}
+              />
             </Box>
           </div>
         </div>
