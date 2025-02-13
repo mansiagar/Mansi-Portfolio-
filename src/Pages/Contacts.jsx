@@ -13,7 +13,7 @@ const Contacts = () => {
       <Box
         className="color-change-2x" // Animista animation
         maxW="100%" // Set max width
-        h="350px"
+        h="400px"
         p={8} // Add padding inside the container
         boxShadow="lg" // Add shadow for depth
         borderRadius="lg" // Rounded corners
