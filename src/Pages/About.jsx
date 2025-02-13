@@ -48,7 +48,14 @@ const About = ({ isVisible }) => {
               innovative projects and collaborating with teams to develop
               high-quality web solutions that make a difference. 🚀
             </Text>
-            <Button>Resume</Button>
+            <Button>
+              <a
+                href="https://drive.google.com/file/d/1iLIlfZZFkcBjwcBSuPhSq9Rj4LEbx_KA/view?usp=sharing"
+                target="blank"
+              >
+                Resume
+              </a>
+            </Button>
           </Box>
         </div>
       </div>
