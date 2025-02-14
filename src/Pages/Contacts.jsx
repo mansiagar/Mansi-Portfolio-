@@ -1,7 +1,6 @@
-import { Box, Text, Link } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { VStack, HStack, Icon } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "../style/contact.css";
 
