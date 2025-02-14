@@ -11,3 +11,11 @@
 .button_container > Button {
   padding: 10px;
 }
+.image_container {
+  width: 500px;
+}
+.image {
+  width: 100%;
+
+  object-fit: cover;
+}

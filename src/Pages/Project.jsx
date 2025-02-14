@@ -18,7 +18,11 @@ const Project = () => {
       <div className="project_container">
         <div className="project_1">
           <div className="image_container">
-            <Image src="" />
+            <Image
+              className="image"
+              src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/003e3552d80711c4e8c37466978f98871dcdcd62/src/assets/Project%201.jpg
+"
+            />
           </div>
           <div className="description_container">
             <Text display={"flex"} justifyContent={"center"}>
@@ -57,7 +61,14 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <div className="project_2"></div>
+        <div className="project_2">
+          <div className="image_container">
+            <Image
+              className="image"
+              src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/003e3552d80711c4e8c37466978f98871dcdcd62/src/assets/Project%202.jpg"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
