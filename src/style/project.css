@@ -1,4 +1,5 @@
-.project_1 {
+.project_1,
+.project_2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -8,14 +9,46 @@
   gap: 10px;
   margin: 10px;
 }
-.button_container > Button {
+.button_container_2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px 50px;
+}
+
+.button_container_2 > Button {
+  margin-top: 10px;
   padding: 10px;
 }
-.image_container {
-  width: 500px;
+.button_container > Button {
+  margin-top: 10px;
+  padding: 10px;
 }
-.image {
-  width: 100%;
 
+.image {
+  width: 80%;
+  margin-left: 50px;
   object-fit: cover;
+  margin-top: 5px;
+}
+.dec_text {
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  margin-right: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.highlight {
+  font-size: 1.1em;
+  letter-spacing: 1.5px;
+  margin-right: 20px;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: justify;
+
+  margin-top: 10px;
 }
