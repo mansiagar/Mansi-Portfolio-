@@ -24,7 +24,13 @@ const Contacts = () => {
           justifyContent="center" // Center content vertically
           alignItems="center" // Center content horizontally
         >
-          <Text className="focus-in" fontSize="3xl" fontWeight="bold" p={5}>
+          <Text
+            className="focus-in"
+            fontSize="3xl"
+            fontWeight="bold"
+            p={5}
+            color="blue.600"
+          >
             ✨CONTACT ME✨
           </Text>
 

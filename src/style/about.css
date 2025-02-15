@@ -9,7 +9,7 @@
   text-align: center;
   justify-content: center;
 }
-Button {
+.about_button {
   background-color: #19dcea;
   color: white;
   font-size: 1.1em;

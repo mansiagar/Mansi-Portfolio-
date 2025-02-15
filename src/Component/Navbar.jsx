@@ -7,9 +7,10 @@ import About from "@/Pages/About";
 
 import Skills from "@/Pages/Skills";
 import { useState } from "react";
-import Exprience from "@/Pages/Exprience";
+
 import Project from "@/Pages/Project";
 import Contacts from "@/Pages/Contacts";
+import ExperienceCard from "@/Pages/Exprience";
 
 const Navbar = () => {
   const [aboutVisible, setaboutVisible] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
           p={4}
           position="fixed"
           width="100%"
-          top={0}
+          top={5}
           zIndex={1000}
           className="navbar"
         >
@@ -62,7 +63,7 @@ const Navbar = () => {
               duration={500}
               offset={-70}
             >
-              <Link p={3} color="white" fontFamily="bold" cursor="pointer">
+              <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Experience
               </Link>
             </ScrollLink>
@@ -100,7 +101,7 @@ const Navbar = () => {
         {/* Exprience Section */}
         <Element name="Exprience">
           <Box>
-            <Exprience />
+            <ExperienceCard />
           </Box>
         </Element>
         {/* Projects Section */}

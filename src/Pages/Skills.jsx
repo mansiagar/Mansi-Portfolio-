@@ -27,7 +27,7 @@ const Skills = ({ isVisible }) => {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="3xl" fontWeight="bold" p={5}>
+        <Text fontSize="3xl" fontWeight="bold" p={5} color="blue.600">
           TECHNICAL SKILLS{" "}
         </Text>
       </Box>

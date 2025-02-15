@@ -19,7 +19,7 @@ const About = ({ isVisible }) => {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="3xl" fontWeight="bold" p={5}>
+        <Text fontSize="3xl" fontWeight="bold" p={5} color="blue.600">
           ABOUT ME
         </Text>
       </Box>
@@ -48,7 +48,7 @@ const About = ({ isVisible }) => {
               innovative projects and collaborating with teams to develop
               high-quality web solutions that make a difference. 🚀
             </Text>
-            <Button>
+            <Button className="about_button">
               <a
                 href="https://drive.google.com/file/d/1iLIlfZZFkcBjwcBSuPhSq9Rj4LEbx_KA/view?usp=sharing"
                 target="blank"
