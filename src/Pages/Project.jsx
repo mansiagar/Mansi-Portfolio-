@@ -1,7 +1,18 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import { Button } from "react-scroll";
 import "../style/project.css";
-const Project = () => {
+import "../style/about.css";
+import { useEffect, useState } from "react";
+const Project = (isVisible) => {
+  const [animate, setanimate] = useState(false);
+
+  useEffect(() => {
+    if (isVisible) {
+      setanimate(true);
+    }
+  }, [isVisible]);
+
+  console.log(animate, "project");
   return (
     <div>
       <Box
@@ -19,11 +30,16 @@ const Project = () => {
         <div className="project_1">
           <div className="image_container_1">
             <Image
-              className="image_1"
+              className={`${animate ? "scale-in-hor-left" : ""} image_1`}
               src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/a33c59c4c8cb2f47fd45cfdd3beba3e2d04fb945/src/assets/Project%201.jpg"
             />
           </div>
-          <div className="description_container_1" style={{ margin: "10px" }}>
+          <div
+            className={`${
+              animate ? "scale-in-hor-right" : ""
+            } description_container_1 `}
+            style={{ margin: "10px" }}
+          >
             <Text as="p" className="dec_text" justifyContent={"center"}>
               The
               <Text as="span" bg="orange.600" px={2} borderRadius="md">
@@ -60,7 +76,12 @@ const Project = () => {
         </div>
         <div className="project_2">
           {/* dec_start */}
-          <div className="description_container" style={{ margin: "30px" }}>
+          <div
+            className={`${
+              animate ? "scale-in-hor-left" : ""
+            } description_container`}
+            style={{ margin: "30px" }}
+          >
             <Text as="p" justifyContent={"center"} className="dec_text">
               The{" "}
               <Text as="span" bg="orange.600" px={2} borderRadius="md">
@@ -101,7 +122,7 @@ const Project = () => {
           {/* dec_end */}
           <div className="image_container_2">
             <Image
-              className="image_2"
+              className={`${animate ? "scale-in-hor-right" : ""} image_2 `}
               src="https://raw.githubusercontent.com/mansiagar/Mansi-Portfolio-/003e3552d80711c4e8c37466978f98871dcdcd62/src/assets/Project%202.jpg"
             />
           </div>

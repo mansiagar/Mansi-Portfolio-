@@ -7,6 +7,7 @@ import s4 from "../assets/s4.svg";
 import s5 from "../assets/s5.svg";
 import s6 from "../assets/s6.svg";
 import s7 from "../assets/s7.svg";
+import s8 from "../assets/s8.svg";
 import "../style/skills.css";
 
 // eslint-disable-next-line react/prop-types
@@ -40,6 +41,7 @@ const Skills = ({ isVisible }) => {
         <Image src={s5} className={animate ? "logo bounce-in-top" : "logo"} />
         <Image src={s6} className={animate ? "logo bounce-in-top" : "logo"} />
         <Image src={s7} className={animate ? "logo bounce-in-top" : "logo"} />
+        <Image src={s8} className={animate ? "logo bounce-in-top" : "logo"} />
       </div>
 
       {/* Git Statics start */}

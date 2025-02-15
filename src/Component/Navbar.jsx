@@ -15,6 +15,7 @@ import ExperienceCard from "@/Pages/Exprience";
 const Navbar = () => {
   const [aboutVisible, setaboutVisible] = useState(false);
   const [skillVisible, setSkillVisible] = useState(false);
+  const [projectVisible, setprojectVisible] = useState(false);
   return (
     <div>
       <Box>
@@ -68,7 +69,13 @@ const Navbar = () => {
               </Link>
             </ScrollLink>
             <ScrollLink to="projects" smooth={true} duration={500} offset={-70}>
-              <Link p={3} color="white" fontWeight="bold" cursor="pointer">
+              <Link
+                p={3}
+                color="white"
+                fontWeight="bold"
+                cursor="pointer"
+                onClick={() => setprojectVisible(true)}
+              >
                 Projects
               </Link>
             </ScrollLink>
@@ -107,7 +114,7 @@ const Navbar = () => {
         {/* Projects Section */}
         <Element name="projects">
           <Box>
-            <Project />
+            <Project isVisible={projectVisible} />
           </Box>
         </Element>
         {/* Contacts Section */}
