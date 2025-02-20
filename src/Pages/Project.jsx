@@ -40,7 +40,12 @@ const Project = (isVisible) => {
             } description_container_1 `}
             style={{ margin: "10px" }}
           >
-            <Text as="p" className="dec_text" justifyContent={"center"}>
+            <Text
+              as="p"
+              className="dec_text"
+              color="black"
+              justifyContent={"center"}
+            >
               The
               <Text as="span" bg="orange.600" px={2} borderRadius="md">
                 Resume Builder App
@@ -82,7 +87,12 @@ const Project = (isVisible) => {
             } description_container`}
             style={{ margin: "30px" }}
           >
-            <Text as="p" justifyContent={"center"} className="dec_text">
+            <Text
+              as="p"
+              justifyContent={"center"}
+              color="black"
+              className="dec_text"
+            >
               The{" "}
               <Text as="span" bg="orange.600" px={2} borderRadius="md">
                 Trend Bazzar

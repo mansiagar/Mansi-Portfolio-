@@ -36,7 +36,7 @@ const About = ({ isVisible }) => {
         </div>
         <div className="right_container">
           <Box className={animate ? "scale-in-hor-right" : ""}>
-            <Text lineHeight={2}>
+            <Text lineHeight={2} color="black">
               A passionate Front-End Developer with expertise in React.js,
               JavaScript, and modern UI libraries like Chakra UI and Material
               UI, dedicated to creating responsive, interactive, and visually
