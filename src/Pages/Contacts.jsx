@@ -24,6 +24,7 @@ const Contacts = () => {
           justifyContent="center"
           alignItems="center"
           className="contact_container"
+          color="black"
         >
           <Text
             className="focus-in"
@@ -41,6 +42,7 @@ const Contacts = () => {
             borderRadius="lg"
             boxShadow="lg"
             bg="white"
+            color="black"
           >
             <VStack align="start" spacing={10}>
               <HStack className="focus-in">
