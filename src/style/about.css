@@ -3,12 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 100px;
 }
-.left_container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
+
 .about_button {
   background-color: #19dcea;
   color: white;
@@ -25,6 +20,12 @@
 @media (min-width: 1024px) and (max-width: 1440px) {
   .right_container {
     margin-right: 30px;
+  }
+  .left_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }
 

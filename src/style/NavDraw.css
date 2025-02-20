@@ -3,9 +3,19 @@
   flex-direction: column;
   color: #ea580c;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1023px) {
   .git_container {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .git_right_container,
+  .git_left_container {
+    justify-content: center;
+    text-align: center;
+  }
+  .git_center_container {
+    display: none;
   }
 }
