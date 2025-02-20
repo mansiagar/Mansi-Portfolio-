@@ -65,6 +65,7 @@ const Skills = ({ isVisible }) => {
                 height="200px"
                 width="100%"
                 objectFit="cover"
+                className="git_img"
               />
             </Box>
           </div>
@@ -75,8 +76,9 @@ const Skills = ({ isVisible }) => {
                 src="https://github-readme-streak-stats.herokuapp.com/?user=mansiagar&theme=default"
                 alt="Profile Picture"
                 height="200px"
-                width="100%"
+                width="100vw"
                 objectFit="cover"
+                className="git_img"
               />
             </Box>
           </div>
@@ -89,6 +91,7 @@ const Skills = ({ isVisible }) => {
                 width="100%"
                 objectFit="cover"
                 marginRight={10}
+                className="git_img"
               />
             </Box>
           </div>

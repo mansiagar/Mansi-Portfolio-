@@ -21,22 +21,21 @@ const ExperienceCard = () => {
           p={8}
           borderRadius="2xl"
           boxShadow="xl" // 3D shadow effect
-          maxW="xxl"
-          h="400px" // Set height for big box
+          maxW={{ base: "80vw", md: "xxl" }}
+          h={{ base: "800px", md: "500px" }} // Set height for big box
           display="flex"
           flexDirection="column"
-          justifyContent="flex-end" // Align content at the bottom
           _hover={{ transform: "scale(1.05)", transition: "0.3s ease-in-out" }} // Hover effect
         >
-          <VStack align="start" spacing={3}>
-            <Text fontSize="2xl" fontWeight="bold">
+          <VStack align="start" spacing={3} className="text">
+            <Text fontSize="2xl" fontWeight="bold" className="text">
               🚀 Xenosis IT Solution
             </Text>
             <Text fontSize="md">
               Intern | Frontend Developer | Sep 2024 - Dec 2024
             </Text>
 
-            <Text fontSize="xl" lineHeight={2}>
+            <Text fontSize="xl" lineHeight={2} className="text">
               Worked on the <b>Resume Builder App</b> and{" "}
               <b>Engineer-StudyHub</b> as a Frontend Developer, focusing on
               creating <b>responsive</b> and <b>user-friendly</b> interfaces

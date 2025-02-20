@@ -15,3 +15,13 @@
     opacity: 1;
   }
 }
+@media (max-width: 1023px) {
+  .Contact_container {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .Contact_container {
+    width: 80%;
+  }
+}

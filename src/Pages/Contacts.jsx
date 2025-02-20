@@ -10,19 +10,20 @@ const Contacts = () => {
   return (
     <div>
       <Box
-        className="color-change-2x" // Animista animation
-        maxW="100%" // Set max width
+        className="color-change-2x"
+        maxW="100%"
         h="400px"
-        p={8} // Add padding inside the container
-        boxShadow="lg" // Add shadow for depth
-        borderRadius="lg" // Rounded corners
-        bg="gray.100" // Light background
+        p={8}
+        boxShadow="lg"
+        borderRadius="lg"
+        bg="gray.100"
       >
         <Box
-          display="flex" // Use flexbox for alignment
-          flexDirection="column" // Stack items vertically
-          justifyContent="center" // Center content vertically
-          alignItems="center" // Center content horizontally
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+          className="contact_container"
         >
           <Text
             className="focus-in"

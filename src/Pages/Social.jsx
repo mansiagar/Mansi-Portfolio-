@@ -8,7 +8,7 @@ const SocialLinks = () => {
       <VStack align="center" spacing={5}>
         <HStack spacing={5}>
           {/* GitHub */}
-          <Link p={10} href="https://github.com/mansiagar" isExternal>
+          <Link href="https://github.com/mansiagar" isExternal>
             <Icon
               as={FaGithub}
               boxSize={10}
