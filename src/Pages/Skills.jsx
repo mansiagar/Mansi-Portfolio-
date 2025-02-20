@@ -69,7 +69,7 @@ const Skills = ({ isVisible }) => {
             </Box>
           </div>
 
-          <div className="">
+          <div className="git_center_container">
             <Box className={animate ? "" : ""}>
               <Image
                 src="https://github-readme-streak-stats.herokuapp.com/?user=mansiagar&theme=default"

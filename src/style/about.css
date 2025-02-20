@@ -1,6 +1,6 @@
 .about_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 100px;
 }
 .left_container {
@@ -15,11 +15,19 @@
   font-size: 1.1em;
 }
 .right_container {
-  margin-right: 30px;
   padding: 2px;
   font-family: "Times New Roman", Times, serif;
   font-size: 1.1em;
+  text-align: justify; /* Justifies text on all screens */
 }
+
+/* Apply margin-right only for laptop screens (1024px to 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .right_container {
+    margin-right: 30px;
+  }
+}
+
 .scale-in-hor-left {
   -webkit-animation: scale-in-hor-left 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;

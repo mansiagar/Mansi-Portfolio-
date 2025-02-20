@@ -5,10 +5,9 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 20px;
-  font-size: 1.4em;
-  font-family: "Times New Roman", Times, serif;
   width: 100vw;
+  font-family: "Times New Roman", Times, serif;
+  overflow-x: hidden;
 }
 .right_side {
   position: fixed;
@@ -26,4 +25,9 @@
 .active {
   color: blue;
   font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80vw;
+  }
 }

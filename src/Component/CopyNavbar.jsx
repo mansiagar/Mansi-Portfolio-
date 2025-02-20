@@ -4,12 +4,18 @@ import "../style/animation.css";
 import { Box, Flex, Link } from "@chakra-ui/react";
 import { Link as ScrollLink, Element } from "react-scroll";
 import About from "@/Pages/About";
-import { useState } from "react";
+
 import Skills from "@/Pages/Skills";
+import { useState } from "react";
+
+import Project from "@/Pages/Project";
+import Contacts from "@/Pages/Contacts";
+import ExperienceCard from "@/Pages/Exprience";
 
 const Navbar = () => {
   const [aboutVisible, setaboutVisible] = useState(false);
   const [skillVisible, setSkillVisible] = useState(false);
+  const [projectVisible, setprojectVisible] = useState(false);
   return (
     <div>
       <Box>
@@ -84,14 +90,34 @@ const Navbar = () => {
             <Home />
           </Box>
         </Element>
+
         <Element name="about">
           <Box>
             <About isVisible={aboutVisible} />
           </Box>
         </Element>
+        {/* skills Section */}
         <Element name="skill">
           <Box>
             <Skills isVisible={skillVisible} />
+          </Box>
+        </Element>
+        {/* Exprience Section */}
+        <Element name="Exprience">
+          <Box>
+            <ExperienceCard />
+          </Box>
+        </Element>
+        {/* Projects Section */}
+        <Element name="projects">
+          <Box>
+            <Project isVisible={projectVisible} />
+          </Box>
+        </Element>
+        {/* Contacts Section */}
+        <Element name="contacts">
+          <Box>
+            <Contacts />
           </Box>
         </Element>
       </Box>

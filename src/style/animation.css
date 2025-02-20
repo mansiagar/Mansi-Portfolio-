@@ -32,3 +32,11 @@
     background: #b22cff;
   }
 }
+.home {
+  max-width: 100vw;
+}
+@media screen and (max-width: 768px) {
+  .home {
+    max-width: 80vw;
+  }
+}

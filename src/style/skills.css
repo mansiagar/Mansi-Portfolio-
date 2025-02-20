@@ -1,7 +1,9 @@
 .logo_container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
   justify-content: center;
-  padding: 50px;
+  align-items: center;
 }
 .logo {
   margin: 20px;
@@ -119,10 +121,23 @@
     animation-timing-function: ease-out;
   }
 }
+@media screen and (max-width: 768px) {
+  .git_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center; /* Centers content inside grid */
+  }
+
+  .git_right_container,
+  .git_left_container {
+    justify-content: center; /* Centers text in flex container */
+  }
+}
+
 /* git styles */
 .git_container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .git_right_container {
   display: flex;

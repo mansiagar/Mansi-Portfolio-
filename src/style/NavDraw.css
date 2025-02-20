@@ -1,0 +1,11 @@
+.NavDraw {
+  display: flex;
+  flex-direction: column;
+  color: #ea580c;
+}
+@media screen and (max-width: 768px) {
+  .git_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
