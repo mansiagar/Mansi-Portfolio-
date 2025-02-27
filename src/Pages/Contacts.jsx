@@ -10,13 +10,12 @@ const Contacts = () => {
   return (
     <div>
       <Box
-        className="color-change-2x"
         maxW="100%"
         h="400px"
         p={8}
         boxShadow="lg"
         borderRadius="lg"
-        bg="gray.100"
+        bg="#1E3A8A"
       >
         <Box
           display="flex"
@@ -31,7 +30,7 @@ const Contacts = () => {
             fontSize="3xl"
             fontWeight="bold"
             p={5}
-            color="blue.600"
+            color={"white"}
           >
             ✨CONTACT ME✨
           </Text>

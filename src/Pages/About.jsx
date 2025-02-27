@@ -19,7 +19,7 @@ const About = ({ isVisible }) => {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="3xl" fontWeight="bold" p={5} color="blue.600">
+        <Text fontSize="3xl" fontWeight="bold" p={5} color="#1E3A8A">
           ABOUT ME
         </Text>
       </Box>

@@ -1,5 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import { Button } from "react-scroll";
+import { Button } from "@chakra-ui/react";
 import "../style/project.css";
 import "../style/about.css";
 import { useEffect, useState } from "react";
@@ -21,7 +21,7 @@ const Project = (isVisible) => {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="3xl" fontWeight="bold" p={8} color="blue.600">
+        <Text fontSize="3xl" fontWeight="bold" p={8} color="#1E3A8A">
           MY PROJECTS
         </Text>
       </Box>
@@ -65,16 +65,21 @@ const Project = (isVisible) => {
               <Button className="live_button">
                 <a
                   href="https://mansiagar.github.io/resume_builder_app/"
-                  target="blank"
-                ></a>
-                Live Demo
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  Live Demo
+                </a>
               </Button>
+
               <Button className="Github_button">
                 <a
                   href="https://github.com/mansiagar/resume_builder_app.git"
                   target="blank"
-                ></a>
-                GitHub Link
+                >
+                  GitHub Link
+                </a>
               </Button>
             </div>
           </div>
@@ -114,17 +119,20 @@ const Project = (isVisible) => {
             <div className="button_container_2">
               <Button className="live_button">
                 <a
-                  href="https://mansiagar.github.io/resume_builder_app/"
+                  href="https://mansiagar.github.io/TrendBazaar/"
                   target="blank"
-                ></a>
-                Live Demo
+                >
+                  {" "}
+                  Live Demo
+                </a>
               </Button>
               <Button className="Github_button">
                 <a
-                  href="https://github.com/mansiagar/resume_builder_app.git"
+                  href="https://github.com/mansiagar/TrendBazaar"
                   target="blank"
-                ></a>
-                GitHub Link
+                >
+                  GitHub Link
+                </a>
               </Button>
             </div>
           </div>

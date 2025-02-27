@@ -5,8 +5,6 @@ import "../style/NavDraw.css";
 import {
   DrawerBackdrop,
   DrawerBody,
-  DrawerActionTrigger,
-  DrawerCloseTrigger,
   DrawerContent,
   DrawerRoot,
   DrawerTrigger,
@@ -23,11 +21,17 @@ const Demo = () => {
   const [aboutVisible, setaboutVisible] = useState(false);
   const [skillVisible, setSkillVisible] = useState(false);
   const [projectVisible, setprojectVisible] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   return (
     <>
       {" "}
       <HStack wrap="wrap">
-        <DrawerRoot placement={"start"}>
+        <DrawerRoot
+          placement={"start"}
+          open={isDrawerOpen}
+          onClose={() => setIsDrawerOpen}
+        >
           <DrawerBackdrop />
           <DrawerTrigger asChild>
             <Button
@@ -36,6 +40,7 @@ const Demo = () => {
               mt={10}
               position={"fixed"}
               display={{ base: "block", md: "none" }}
+              onClick={() => setIsDrawerOpen(true)}
             >
               <svg
                 className="hamburger"
@@ -70,9 +75,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
+                      onClick={(event) => {
+                        event.preventDefault();
+
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       Home
                     </Link>
@@ -85,10 +95,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
-                      onClick={() => setaboutVisible(true)}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setaboutVisible(true);
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       About
                     </Link>
@@ -101,10 +115,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
-                      onClick={() => setSkillVisible(true)}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setSkillVisible(true);
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       Skills
                     </Link>
@@ -117,9 +135,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
+                      onClick={(event) => {
+                        event.preventDefault();
+
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       Experience
                     </Link>
@@ -132,10 +155,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
-                      onClick={() => setprojectVisible(true)}
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setprojectVisible(true);
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       Projects
                     </Link>
@@ -148,9 +175,14 @@ const Demo = () => {
                   >
                     <Link
                       p={3}
-                      color="#ea580c"
+                      color="#1E3A8A"
                       fontWeight="bold"
                       cursor="pointer"
+                      onClick={(event) => {
+                        event.preventDefault();
+
+                        setIsDrawerOpen(false);
+                      }}
                     >
                       Contact
                     </Link>
@@ -158,12 +190,6 @@ const Demo = () => {
                 </Flex>
               </Box>
             </DrawerBody>
-            <DrawerActionTrigger asChild>
-              <Button variant="outline" bg={"#19dcea"}>
-                Cancel
-              </Button>
-            </DrawerActionTrigger>
-            <DrawerCloseTrigger />
           </DrawerContent>
         </DrawerRoot>
       </HStack>

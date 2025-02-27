@@ -5,19 +5,18 @@ const Home = () => {
   return (
     <div>
       <Box
-        className="color-change-2x" // Animista animation
         maxW="100%" // Set max width
         h="700px"
-        p={8} // Add padding inside the container
-        boxShadow="lg" // Add shadow for depth
-        borderRadius="lg" // Rounded corners
-        bg="gray.100" // Light background
+        p={8}
+        boxShadow="lg"
+        borderRadius="lg"
+        bg="#1E3A8A"
       >
         <Box
-          display="flex" // Use flexbox for alignment
-          flexDirection="column" // Stack items vertically
-          justifyContent="center" // Center content vertically
-          alignItems="center" // Center content horizontally
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
           mt={100}
         >
           <Text
@@ -26,11 +25,18 @@ const Home = () => {
             fontWeight="bold"
             p={5}
             mt={10}
+            color={"white"}
           >
-            ✨Hi, I&apos;m Mansi Agrawal✨
+            ✨HI, I&apos;M MANSI AGARWAL✨
           </Text>
-          <Text className="focus-in" fontSize="3xl" fontWeight="bold" p={5}>
-            A Passionate Front-End Developer 🚀
+          <Text
+            className="focus-in"
+            color={"white"}
+            fontSize="3xl"
+            fontWeight="bold"
+            p={5}
+          >
+            A PASSIONATE FRONT END DEVELOPER 🚀
           </Text>
         </Box>
       </Box>

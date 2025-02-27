@@ -8,6 +8,7 @@
   width: 100vw;
   font-family: "Times New Roman", Times, serif;
   overflow-x: hidden;
+  background-color: #1e3a8a;
 }
 .right_side {
   position: fixed;
@@ -20,6 +21,7 @@
   font-size: 1.4em;
   font-family: "Times New Roman", Times, serif;
   width: 100vw;
+  background-color: #1e3a8a;
 }
 
 .active {

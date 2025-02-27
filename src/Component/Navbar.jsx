@@ -25,7 +25,7 @@ const Navbar = () => {
           className="navbar"
           overflowX={"hidden"}
         >
-          <div className="right_side color-change-2x ">
+          <div className="right_side">
             <ScrollLink to="home" smooth={true} duration={500} offset={-70}>
               <Link p={3} color="white" fontWeight="bold" cursor="pointer">
                 Home

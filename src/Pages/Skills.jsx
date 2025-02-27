@@ -28,7 +28,7 @@ const Skills = ({ isVisible }) => {
         justifyContent="center"
         alignItems="center"
       >
-        <Text fontSize="3xl" fontWeight="bold" p={5} color="blue.600">
+        <Text fontSize="3xl" fontWeight="bold" p={5} color="#1E3A8A">
           TECHNICAL SKILLS{" "}
         </Text>
       </Box>
@@ -52,7 +52,7 @@ const Skills = ({ isVisible }) => {
           justifyContent="center"
           alignItems="center"
         >
-          <Text fontSize="3xl" fontWeight="bold" p={5}>
+          <Text fontSize="3xl" fontWeight="bold" p={5} color={"#1E3A8A"}>
             GIT STATISTICS
           </Text>
         </Box>
