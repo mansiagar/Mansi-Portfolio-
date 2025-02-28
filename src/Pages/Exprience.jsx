@@ -22,7 +22,7 @@ const ExperienceCard = () => {
           borderRadius="2xl"
           boxShadow="xl" // 3D shadow effect
           maxW={{ base: "80vw", md: "xxl" }}
-          h={{ base: "800px", md: "500px" }} // Set height for big box
+          h={{ base: "1000px", md: "500px" }} // Set height for big box
           display="flex"
           flexDirection="column"
           _hover={{ transform: "scale(1.05)", transition: "0.3s ease-in-out" }} // Hover effect
