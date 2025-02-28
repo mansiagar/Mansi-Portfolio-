@@ -50,7 +50,7 @@ const About = ({ isVisible }) => {
             </Text>
             <Button className="about_button">
               <a
-                href="https://drive.google.com/file/d/1iLIlfZZFkcBjwcBSuPhSq9Rj4LEbx_KA/view?usp=sharing"
+                href="https://drive.google.com/file/d/12rQonuXmVvDUKqagg58o2ACxfKCGLdu_/view?usp=sharing"
                 target="blank"
               >
                 Resume
