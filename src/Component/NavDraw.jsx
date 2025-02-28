@@ -55,7 +55,7 @@ const Demo = () => {
             </Button>
           </DrawerTrigger>
           <DrawerContent>
-            <DrawerBody>
+            <DrawerBody bg={"white"}>
               <Box>
                 {/* Navbar */}
                 <Flex
