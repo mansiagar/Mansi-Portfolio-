@@ -61,7 +61,7 @@ const Contacts = () => {
               <HStack className="focus-in">
                 <Icon as={MdLocationOn} boxSize={5} color="blue.500" />
                 <Text fontSize="lg" fontWeight="medium">
-                  Ujjain, Madhya Pradesh
+                  Indore, Madhya Pradesh
                 </Text>
               </HStack>
             </VStack>
